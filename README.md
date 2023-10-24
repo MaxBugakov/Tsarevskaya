@@ -1,7 +1,7 @@
 # Tsarevskaya.com
 ## Frontend
-HTML
-CSS
+HTML \n
+CSS  \n
 JQuery
 ## Backend
 Soon...
