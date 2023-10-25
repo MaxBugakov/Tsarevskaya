@@ -17,6 +17,7 @@ body{
 .nav{
     margin: 0 20px;
     width: 100%;
+    -webkit-backdrop-filter:  blur(135px);
     backdrop-filter: blur(135px);
     border-radius: 20px;
     max-width: 1300px;
