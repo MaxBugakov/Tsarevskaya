@@ -78,6 +78,7 @@ body{
     transition: 0.2s;
     right: 1px;
     bottom: 19px;
+    z-index: 12;
 }
 
 #shopping-bag {
