@@ -37,17 +37,23 @@
         height: 45px;
         font-size: 30px;
     }
-    .slick-prev.slick-arrow,
+    /* .slick-prev.slick-arrow,
     .slick-next.slick-arrow {
         left: 200%;
-    }
-    .slider {
+    } */
+    /* .slider {
+        overflow: hidden;
+    } */
+    .slick-prev,
+    .slick-next {
+        width: 0px;
+        height: 0;
         overflow: hidden;
     }
     .slider-sizee {
         height: 300px;
     }
 }
-@media screen and (max-width: 425px) {
+/* @media screen and (max-width: 425px) {
     
-}
+} */
