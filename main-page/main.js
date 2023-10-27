@@ -14,24 +14,30 @@ $(document).ready( function(){
     let click_menu_flag=false;
     $(".nav__menu-button").on("click", function() {
         if (click_menu_flag==false) {
-            $('#menu div').css('background', 'rgba(0, 0, 0, 0.2)');
+            // $('#menu div').css('background', 'rgba(0, 0, 0, 0.2)');
             $('#drop-menu').addClass('open-menu');
             click_menu_flag=true;
             $('.test-wrapper').css('z-index', '7');
+            var replaced = $("#menu").html().replace('Menu','Close');
+            $("#menu").html(replaced);
         }
         else {
-            $('#menu div').css('background', 'rgba(0, 0, 0, 0.0)');
+            // $('#menu div').css('background', 'rgba(0, 0, 0, 0.0)');
             $('#drop-menu').removeClass('open-menu');
             click_menu_flag=false;
             $('.test-wrapper').css('z-index', '-1');
+            var replaced = $("#menu").html().replace('Close','Menu');
+            $("#menu").html(replaced);
         }
     });
     $(".test-wrapper").on("click", function() {
         console.log(11111111111);
-        $('#menu div').css('background', 'rgba(0, 0, 0, 0.0)');
+        // $('#menu div').css('background', 'rgba(0, 0, 0, 0.0)');
         $('#drop-menu').removeClass('open-menu');
         click_menu_flag=false;
         $('.test-wrapper').css('z-index', '-1');
+        var replaced = $("#menu").html().replace('Close','Menu');
+        $("#menu").html(replaced);
     });
 
     // Цвет навигации при наведении на корзину.

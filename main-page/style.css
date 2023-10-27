@@ -30,9 +30,6 @@ body{
 .nav1{
     width: 100%;
     height: 56px;
-    /* display: flex;
-    align-items: center;
-    justify-content: space-between; */
     overflow: hidden;
     position: relative;
 }
@@ -48,9 +45,9 @@ body{
     color: rgba(63, 68, 74, 1);
     float: left;
 }
-/* .nav__menu-button:hover div {
-    background-color: rgba(0, 0, 0, 0.1);
-} */
+.nav__menu-button:hover div {
+    background-color: rgba(0, 0, 0, 0.15);
+}
 .test-wrapper {
     position: absolute;
     width: 100%;
