@@ -60,8 +60,8 @@ $(document).ready( function(){
             }
             if ($(this).scrollTop()>100 && scroll_flag==false) {
                 logo.css("bottom", "50px");
-                dot.css("bottom", "50%");
-                dot.css("right", "50%")
+                dot.css("bottom", "calc(50% - 1px)");
+                dot.css("right", "calc(50% - 1px)")
                 dot.css("transform", "scale(14)")
                 scroll_flag=true;
             }
