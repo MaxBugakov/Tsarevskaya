@@ -31,7 +31,6 @@ $(document).ready( function(){
         }
     });
     $(".test-wrapper").on("click", function() {
-        console.log(11111111111);
         // $('#menu div').css('background', 'rgba(0, 0, 0, 0.0)');
         $('#drop-menu').removeClass('open-menu');
         click_menu_flag=false;
@@ -41,13 +40,13 @@ $(document).ready( function(){
     });
 
     // Цвет навигации при наведении на корзину.
-    $('#shopping-bag').hover(mouseEnter1, mouseLeave1);
-    function mouseEnter1() {
-        $('.nav').css('background', 'rgba(0, 0, 0, 0.025)')
-    };
-    function mouseLeave1() {
-        $('.nav').css('background', 'rgba(0, 0, 0, 0)')
-    };
+    // $('#shopping-bag').hover(mouseEnter1, mouseLeave1);
+    // function mouseEnter1() {
+    //     $('.nav').css('background', 'rgba(0, 0, 0, 0.025)')
+    // };
+    // function mouseLeave1() {
+    //     $('.nav').css('background', 'rgba(0, 0, 0, 0)')
+    // };
 
     // Анимация логотипа при скроле.
     var logo = $('.nav1__logo');

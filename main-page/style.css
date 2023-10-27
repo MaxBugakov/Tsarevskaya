@@ -113,7 +113,7 @@ body{
     background-image: url(../images/shopping-bag-icon.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 80%;
+    background-size: 65%;
 }
 #shopping-bag:hover .nav1__shopping-bag{
     background-color: rgba(0, 0, 0, 0.2);
@@ -159,9 +159,9 @@ body{
 .img1 {
     width: 100%;
     height: 900px;
-    background-image: url(../images/img1.jpg);
+    background-image: url(../images/first-img.JPG);
     background-size: cover;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
 }
 .marquee-text {
@@ -285,17 +285,16 @@ body{
     background-image: url(https://i.pinimg.com/564x/58/35/ae/5835ae86c6a8bef529d82335371fd449.jpg);
 }
 .slider__img2 {
-    background-image: url(https://i.pinimg.com/564x/0f/19/ff/0f19ffecbbc5961fe135a26a92bd712b.jpg);
+    background-image: url(../images/slider-img2.JPG);
 }
 .slider__img3 {
-    background-image: url(https://i.pinimg.com/564x/49/51/5d/49515d2b575ffee6daf5ba3bc903961c.jpg);
+    background-image: url(../images/slider-img3.JPG);
 }
 .slider__img4 {
-    background-image: url(https://i.pinimg.com/564x/19/4d/66/194d66c32e80adecefa84bc6be5f97ca.jpg);
-    border-radius: 10px;
+    background-image: url(../images/slider-img4.JPG);
 }
 .slider__img5 {
-    background-image: url(https://i.pinimg.com/564x/bd/8a/cc/bd8acc493d35e13f3a50266f5bae6f5a.jpg);
+    background-image: url(../images/slider-img5.JPG);
 }
 
 
