@@ -134,14 +134,26 @@ body{
     grid-auto-flow: column;
     background-color: rgba(0, 0, 0, 0.15);
     margin: 5px;
-    border-radius: 12px;
+    border-radius: 15px;
+    padding: 5px;
 }
-.drop-menu__list > div {
+.drop-menu__list > a {
     border-radius: 5px;
-    background-color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.1);
     padding: 1em;
-    margin: 5px;
+    margin: 10px;
     border-radius: 12px;
+    color: rgb(237, 237, 237); 
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    transition: 0.2s;
+}
+.drop-menu__list > a:hover {
+    transform: scale(1.03);
+    background-color: rgba(0, 0, 0, 0.15)
 }
 
 
