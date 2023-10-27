@@ -272,7 +272,7 @@ body{
     opacity: 0;
     transform: translateY(-100px);
 }
-  
+
 .element-animation.element-show {
     opacity: 1;
     transition: all 1s;

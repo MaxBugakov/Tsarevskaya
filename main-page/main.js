@@ -29,22 +29,45 @@ $(document).ready( function(){
     var logo = $('.nav1__logo');
     var dot = $('.nav1__dot');
     let scroll_flag=false;
-    $(document).scroll(function() {
-        if (scroll_flag==true && $(this).scrollTop()<=100) {
-            logo.css("bottom", "0px");
-            dot.css("bottom", "19px");
-            dot.css("right", "1px")
-            dot.css("transform", "scale(1)")
-            scroll_flag=false;
-        }
-        if ($(this).scrollTop()>100 && scroll_flag==false) {
-            logo.css("bottom", "50px");
-            dot.css("bottom", "calc(50% - 2px)");
-            dot.css("right", "50%")
-            dot.css("transform", "scale(12)")
-            scroll_flag=true;
-        }
-    });
+    if ($(window).width()>425) {
+        $(document).scroll(function() {
+            if (scroll_flag==true && $(this).scrollTop()<=100) {
+                logo.css("bottom", "0px");
+                dot.css("bottom", "19px");
+                dot.css("right", "1px")
+                dot.css("transform", "scale(1)")
+                scroll_flag=false;
+            }
+            if ($(this).scrollTop()>100 && scroll_flag==false) {
+                logo.css("bottom", "50px");
+                dot.css("bottom", "calc(50% - 2px)");
+                dot.css("right", "calc(50% - 2px)")
+                dot.css("transform", "scale(12)")
+                scroll_flag=true;
+            }
+        });
+    } else {
+        dot.css("width", "3px");
+        dot.css("height", "3px");
+        dot.css("bottom", "21px");
+        $(document).scroll(function() {
+            if (scroll_flag==true && $(this).scrollTop()<=100) {
+                logo.css("bottom", "0px");
+                dot.css("bottom", "21px");
+                dot.css("right", "1px")
+                dot.css("transform", "scale(1)")
+                scroll_flag=false;
+            }
+            if ($(this).scrollTop()>100 && scroll_flag==false) {
+                logo.css("bottom", "50px");
+                dot.css("bottom", "calc(50%)");
+                dot.css("right", "calc(50%)")
+                dot.css("transform", "scale(14)")
+                scroll_flag=true;
+            }
+        });
+    }
+    
 
    // Анимация блоков при скроле.
     function onEntry(entry) {
