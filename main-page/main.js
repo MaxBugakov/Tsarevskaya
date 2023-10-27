@@ -71,7 +71,7 @@ $(document).ready( function(){
             {
                 breakpoint: 769,
                 settings: {
-                slidesToShow: 3,
+                slidesToShow: 2,
                 }
             },
             {

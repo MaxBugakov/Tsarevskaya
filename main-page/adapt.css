@@ -43,8 +43,9 @@
         height: 0;
         overflow: hidden;
     }
-    .slider-sizee {
-        height: 300px;
+    .slick-dots li button:hover:before,
+    .slick-dots li button:focus:before {
+        opacity: .75;
     }
 }
 @media screen and (max-width: 425px) {
@@ -52,4 +53,8 @@
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(6, 1fr);
     }
+    .slider-sizee {
+        height: 450px;
+    }
+    
 }
