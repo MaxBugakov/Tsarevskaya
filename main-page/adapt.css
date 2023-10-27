@@ -47,6 +47,9 @@
     .slick-dots li button:focus:before {
         opacity: .75;
     }
+    .nav__menu-button:hover div {
+        background-color: rgba(0, 0, 0, 0);
+    }
 }
 @media screen and (max-width: 425px) {
     .drop-menu__list {
@@ -56,5 +59,4 @@
     .slider-sizee {
         height: 450px;
     }
-    
 }

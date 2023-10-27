@@ -136,6 +136,11 @@ body{
     margin: 5px;
     border-radius: 15px;
     padding: 5px;
+    max-height: calc(100vh - 100px);
+    overflow: scroll;
+}
+.drop-menu__list::-webkit-scrollbar {
+    display: none;
 }
 .drop-menu__list > a {
     border-radius: 5px;
