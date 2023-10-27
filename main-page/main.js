@@ -1,20 +1,8 @@
 $(document).ready( function(){
     // Выпадающее меню.
-    // $('.blobk').hover(mouseEnter, mouseLeave);
-    // function mouseEnter() {
-    //     // $('#drop-menu').addClass('open-menu');
-    //     // $('#menu div').css('background', 'rgba(0, 0, 0, 0.2)');
-    //     $('.nav').css('background', 'rgba(0, 0, 0, 0.025)')
-    // };
-    // function mouseLeave() {
-    //     // $('#drop-menu').removeClass('open-menu');
-    //     // $('#menu div').css('background', 'rgba(0, 0, 0, 0.0)');
-    //     $('.nav').css('background', 'rgba(0, 0, 0, 0)')
-    // };
     let click_menu_flag=false;
     $(".nav__menu-button").on("click", function() {
         if (click_menu_flag==false) {
-            // $('#menu div').css('background', 'rgba(0, 0, 0, 0.2)');
             $('#drop-menu').addClass('open-menu');
             click_menu_flag=true;
             $('.test-wrapper').css('z-index', '7');
@@ -22,7 +10,6 @@ $(document).ready( function(){
             $("#menu").html(replaced);
         }
         else {
-            // $('#menu div').css('background', 'rgba(0, 0, 0, 0.0)');
             $('#drop-menu').removeClass('open-menu');
             click_menu_flag=false;
             $('.test-wrapper').css('z-index', '-1');
@@ -31,22 +18,12 @@ $(document).ready( function(){
         }
     });
     $(".test-wrapper").on("click", function() {
-        // $('#menu div').css('background', 'rgba(0, 0, 0, 0.0)');
         $('#drop-menu').removeClass('open-menu');
         click_menu_flag=false;
         $('.test-wrapper').css('z-index', '-1');
         var replaced = $("#menu").html().replace('Close','Menu');
         $("#menu").html(replaced);
     });
-
-    // Цвет навигации при наведении на корзину.
-    // $('#shopping-bag').hover(mouseEnter1, mouseLeave1);
-    // function mouseEnter1() {
-    //     $('.nav').css('background', 'rgba(0, 0, 0, 0.025)')
-    // };
-    // function mouseLeave1() {
-    //     $('.nav').css('background', 'rgba(0, 0, 0, 0)')
-    // };
 
     // Анимация логотипа при скроле.
     var logo = $('.nav1__logo');
