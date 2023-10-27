@@ -37,13 +37,6 @@
         height: 45px;
         font-size: 30px;
     }
-    /* .slick-prev.slick-arrow,
-    .slick-next.slick-arrow {
-        left: 200%;
-    } */
-    /* .slider {
-        overflow: hidden;
-    } */
     .slick-prev,
     .slick-next {
         width: 0px;
