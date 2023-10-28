@@ -1,0 +1,120 @@
+.space {
+    width: 100%;
+    height: 100px;
+}
+
+.main-title {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.main-title h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    color: rgba(63, 68, 74, 1);
+    margin-bottom: 100px;
+}
+/* Clo1 tit */
+.clo1-title {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 20px;
+    /* background-color: red; */
+}
+.clo1-title::before {
+    position: absolute;
+    content: ' ';
+    width: calc(100% - 160px - 70px);
+    height: 2px;
+    background-color: rgba(63, 68, 74, 1);
+    top: calc(50%);
+    left: 170px;
+}
+.clo1-title h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    color: rgba(63, 68, 74, 1);
+}
+
+/* Clo2 tit */
+.clo2-title {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 20px;
+    /* background-color: red; */
+    margin-top: 200px;
+}
+.clo2-title::before {
+    position: absolute;
+    content: ' ';
+    width: calc(100% - 130px - 60px);
+    height: 2px;
+    background-color: rgba(63, 68, 74, 1);
+    top: calc(50%);
+    left: 130px;
+}
+.clo2-title h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    color: rgba(63, 68, 74, 1);
+}
+ 
+/* Кастомизация слайдера */
+.slick-prev,
+.slick-next {
+    background-color: rgb(237, 237, 237);
+    width: 8%;
+}
+.slick-initialized .slick-slide {
+    display: flex;
+    justify-content: center;
+}
+.slider {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+/* Слайдер фото */
+.slider-sizee {
+    width: 90%;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.slider__img1 {
+    background-image: url(img/clo-item1-img1.JPG);
+}
+.slider__img2 {
+    background-image: url(img/clo-item1-img2.JPG);
+}
+.slider__img3 {
+    background-image: url(img/clo-item1-img3.JPG);
+}
+/* .slider__img4 {
+    background-image: url(../images/slider-img4.JPG);
+}
+.slider__img5 {
+    background-image: url(../images/slider-img5.JPG);
+} */
+
+.slider__img11 {
+    background-image: url(img/clo-item2-img1.JPG);
+}
+.slider__img22 {
+    background-image: url(img/clo-item2-img2.JPG);
+}
+.slider__img33 {
+    background-image: url(img/clo-item2-img3.JPG);
+}
+.slider__img44 {
+    background-image: url(img/clo-item2-img4.JPG);
+}

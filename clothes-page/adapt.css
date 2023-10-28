@@ -1,0 +1,27 @@
+@media screen and (max-width: 1440px) {
+    .slider-sizee {
+        height: 600px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .slider-sizee {
+        height: 400px;
+    }
+}
+@media screen and (max-width: 786px) {
+    .slick-prev,
+    .slick-next {
+        width: 0px;
+        height: 0;
+        overflow: hidden;
+    }
+    .slick-dots li button:hover:before,
+    .slick-dots li button:focus:before {
+        opacity: .75;
+    }
+}
+@media screen and (max-width: 425px) {
+    .slider-sizee {
+        height: 450px;
+    }
+}
