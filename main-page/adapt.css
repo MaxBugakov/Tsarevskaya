@@ -47,13 +47,16 @@
     .slider-sizee {
         height: 450px;
     }
+    .second-menu {
+        margin: 100px auto;
+    }
     .second-menu a:nth-child(1) {
         top: 8%;
         left: 10px;
     }
     .second-menu a:nth-child(2) {
-        top: 0;
-        right: 10px;
+        top: -5%;
+        right: 10%;
     }
     .second-menu a:nth-child(3) {
         top: 25%;
