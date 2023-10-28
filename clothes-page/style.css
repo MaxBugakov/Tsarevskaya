@@ -16,6 +16,9 @@
     color: rgba(63, 68, 74, 1);
     margin-bottom: 100px;
 }
+
+
+
 /* Clo1 tit */
 .clo1-title {
     width: 100%;
@@ -40,6 +43,8 @@
     font-size: 25px;
     color: rgba(63, 68, 74, 1);
 }
+
+
 
 /* Clo2 tit */
 .clo2-title {
@@ -67,6 +72,29 @@
     color: rgba(63, 68, 74, 1);
 }
  
+
+/* Кнопка предзаказа */
+.pre-button-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.pre-button-wrapper a {
+    text-decoration: none;
+    color: rgb(237, 237, 237);
+    padding: 15px;
+    background-color: rgba(63, 68, 74, 1);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 30px;
+    transition: 0.2s;
+}
+.pre-button-wrapper a:hover {
+    background-color: rgba(63, 68, 74, 0.85);
+}
+
 /* Кастомизация слайдера */
 .slick-prev,
 .slick-next {
