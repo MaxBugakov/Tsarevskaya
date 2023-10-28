@@ -189,8 +189,6 @@ form div:nth-child(7)::after {
     margin-bottom: 30px;
     margin-top: 50px;
     border-radius: 20px;
-    border: 2px solid rgba(63, 68, 74, 1);
-    background-color: rgb(237, 237, 237);
     transition: 0.2s;
     box-sizing: border-box;
     overflow: hidden;
@@ -203,6 +201,8 @@ form div:nth-child(7)::after {
     border: 0;
     background-color: transparent;
     padding: 0;
+    background-color: rgba(63, 68, 74, 1);
+    color: rgb(237, 237, 237);
 }
 .form div:last-child input:focus {
     outline-width: 0;
@@ -210,13 +210,7 @@ form div:nth-child(7)::after {
     background-color: transparent;
 }
 .form div:last-child input:hover {
-    background-color: transparent;
-}
-.form div:last-child:hover {
-    background-color: rgba(63, 68, 74, 1);
-}
-.form div:last-child:hover input {
-    color: white;
+    background-color: rgba(63, 68, 74, 0.9);
     cursor: pointer;
 }
 

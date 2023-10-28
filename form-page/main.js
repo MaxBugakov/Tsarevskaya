@@ -1,3 +1,5 @@
 $(document).ready( function(){
-    // Код.
+    $("#send-button").on("click", function() {
+        console.log("Sended");
+    });
 });
