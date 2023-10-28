@@ -2,9 +2,9 @@
 .img1 {
     width: 100%;
     height: 900px;
-    background-image: url(../images/slider-img4.JPG);
+    background-image: url(../images/first-img-morror.JPG);
     background-size: cover;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
 }
 
@@ -43,11 +43,14 @@
     border-radius: 30px;
     overflow: hidden;
     transition: 0.2s;
-    background: linear-gradient(90deg, rgba(203,207,204,1) 0%, rgba(221,222,211,1) 100%);
+    /* background: linear-gradient(90deg, rgba(203,207,204,1) 0%, rgba(221,222,211,1) 100%); */
+    /* background: linear-gradient(90deg, rgba(237,237,237,1) 0%, rgba(17,29,142,1) 100%); */
+    background-color: rgba(63, 68, 74, 0.623);
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 30px;
     color: rgba(63, 68, 74, 1);
+    color: rgb(237, 237, 237);
     padding: 15px;
 }
 .second-menu a:hover{
@@ -83,12 +86,14 @@
     left: 5%;
     font-weight: 700;
     background: transparent;
+    color: rgba(63, 68, 74, 1);
 }
 .second-menu a:nth-child(8) {
     bottom: 0;
     right: 10%;
     font-weight: 700;
     background: transparent;
+    color: rgba(63, 68, 74, 1);
 }
 /* Анимация при скроле */
 .element-animation {
