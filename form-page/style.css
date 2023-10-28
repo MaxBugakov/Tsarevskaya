@@ -185,68 +185,6 @@ body{
     width: 100%;
     height: 200px;
 }
-
-/* Блоки миссия, ценности, идея */
-
-/* Блок миссия, идея */
-.info-main-wrapper {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 0px;
-}
-.info-wrapper {
-    width: 100%;
-    max-width: 1200px;
-    display: inline-block;
-    padding: 0 20px;
-    /* margin: 0 20px; */
-}
-.info__mission {
-    width: 100%;
-    font-family: 'Montserrat', sans-serif;
-    margin-bottom: 200px;
-}
-.info__mission__title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.info__mission__title>h2 {
-    font-weight: 500;
-    font-size: 35px;
-    text-transform: uppercase;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 30px;
-}
-.info__mission__text>p {
-    padding: 0;
-    margin: 0;
-    font-size: 23px;
-    text-align: center;
-}
-
-/* Блок ценности */
-.info__mission:nth-child(2) .info__mission__title>h2 {
-    margin-bottom: 80px;
-}
-.info__mission:nth-child(2) .info__mission__text ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 0;
-    margin: 0;
-}
-.info__mission:nth-child(2) .info__mission__text ul:nth-child(1) {
-    justify-content: space-between;
-    margin-bottom: 50px;
-}
-.info__mission:nth-child(2) .info__mission__text ul li {
-    list-style: none;
-    font-size: 23px;
-}
-
 /* Анимация при скроле */
 .element-animation {
     opacity: 0;
@@ -260,6 +198,214 @@ body{
 }
 
 
+.form-title {
+    width: 100%;
+    max-width: 800px;
+    padding: 0 20px;
+    margin: 0 auto;
+    /* background-color: red; */
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form-title h3 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: rgba(63, 68, 74, 1);
+}
+/* Форма */
+.form {
+    width: 100%;
+    max-width: 800px;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.form form {
+    width: 100%;
+    border: 2px solid rgba(63, 68, 74, 1);
+    border-radius: 25px;
+}
+form div {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 50px;
+}
+form div label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(63, 68, 74, 1);
+    margin-bottom: 5px;
+}
+form div input {
+    width: 100%;
+    box-sizing: border-box;
+    height: 50px;
+    border-radius: 20px;
+    border: 2px solid rgba(63, 68, 74, 1);
+    background-color: rgb(237, 237, 237);
+    transition: 0.2s;
+}
+form div input:hover {
+    background-color: rgb(247, 247, 247);
+}
+form div input:focus {
+    outline-width: 0;
+    box-shadow: rgba(63, 68, 74, 1) 0 0 7px 0;
+    background-color: white;
+    
+}
+input[type="text"],
+input[type="email"],
+input[type="number"]
+{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    padding-left: 15px;
+    color: black;
+}
+::-webkit-input-placeholder {
+    color:rgba(0, 0, 0, 0.2);
+}
+::-moz-placeholder {
+    color:rgba(0, 0, 0, 0.2);
+}
+:-moz-placeholder {
+    color:rgba(0, 0, 0, 0.2);
+}
+:-ms-input-placeholder {
+    color:rgba(0, 0, 0, 0.2);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+
+
+
+form div select {
+    font: inherit;
+    letter-spacing: inherit;
+    word-spacing: inherit;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+  
+form div select:not([multiple]) {
+    background: none;
+}
+  
+  /* скроет иконку стрелки в IE */
+form div select::-ms-expand {
+    display: none;
+}
+
+form div select {
+    width: 100%;
+    box-sizing: border-box;
+    height: 50px;
+    border-radius: 20px;
+    border: 2px solid rgba(63, 68, 74, 1);
+    background-color: rgb(237, 237, 237);
+    transition: 0.2s;
+    color: rgba(0, 0, 0, 1);
+    padding-top: 1px;
+    padding-left: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+form div select:hover {
+    background-color: rgb(247, 247, 247);
+}
+form div select:focus {
+    outline-width: 0;
+    box-shadow: rgba(63, 68, 74, 1) 0 0 7px 0;
+    background-color: white;
+    
+}
+form div select option {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+form div:nth-child(7) {
+    position: relative;
+}
+form div:nth-child(7):before,
+form div:nth-child(7)::after {
+    content: ' ';
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    background-color: rgba(63, 68, 74, 1);
+}
+form div:nth-child(7)::before {
+    transform: rotate(45deg);
+    right: 24px;
+    bottom: 23px;
+}
+form div:nth-child(7)::after {
+    transform: rotate(-45deg);
+    right: 15px;
+    bottom: 23px;
+}
+
+
+.eror-form {
+
+}
+.form div:last-child {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    border-radius: 20px;
+    border: 2px solid rgba(63, 68, 74, 1);
+    background-color: rgb(237, 237, 237);
+    transition: 0.2s;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.form div:last-child input {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 0;
+    border: 0;
+    background-color: transparent;
+    padding: 0;
+}
+.form div:last-child input:focus {
+    outline-width: 0;
+    box-shadow: rgba(63, 68, 74, 1) 0 0 0 0;
+    background-color: transparent;
+}
+.form div:last-child input:hover {
+    background-color: transparent;
+}
+.form div:last-child:hover {
+    background-color: rgba(63, 68, 74, 1);
+}
+.form div:last-child:hover input {
+    color: white;
+    cursor: pointer;
+}
 
 
 

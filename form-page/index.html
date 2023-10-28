@@ -6,6 +6,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- Сброс стилей -->
+<link rel="stylesheet" href="reset.css">
 <!-- Мои стили. -->
 <link rel="stylesheet" href="style.css">
 <!-- Адаптив -->
@@ -47,48 +49,49 @@
 
 
     <div class="space"></div>
-     <!-- Обертка для миссия, ценности, идея -->
-     <div class="info-main-wrapper">
-        <div class="info-wrapper">
-            <!-- Миссия -->
-            <div class="info__mission element-animation">
-                <div class="info__mission__title"><h2>Миссия</h2></div>
-                <div class="info__mission__text">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                        Odit ea quisquam veniam asperiores id non in magnam ducimus 
-                        laudantium? Debitis, soluta explicabo ut minima consequuntur deleniti. Dicta recusandae beatae modi.
-                    </p>
-                </div>
+    <div class="form-title"><h3>Предзаказ</h3></div>
+    <div class="form">
+        <form>
+            <div>
+                <label for="name-input">Имя</label>
+                <input id="name-input" type="text" placeholder="Имя">
             </div>
-            <!-- Ценности -->
-            <div class="info__mission element-animation">
-                <div class="info__mission__title"><h2>Ценности</h2></div>
-                <div class="info__mission__text">
-                    <ul>
-                        <li>свобода</li>
-                        <li>красота</li>
-                        <li>успех</li>
-                    </ul>
-                    <ul>
-                        <li>самореализация</li>
-                        <li>переосмысленность</li>
-                    </ul>
-                </div>
+            <div>
+                <label for="surname-input" placeholder="Фамилия">Фамилия</label>
+                <input id="surname-input" type="text" placeholder="Фамилия">
             </div>
-            <!-- Идея -->
-            <div class="info__mission element-animation">
-                <div class="info__mission__title"><h2>Идея</h2></div>
-                <div class="info__mission__text">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                        Odit ea quisquam veniam asperiores id non in magnam ducimus 
-                        laudantium? Debitis, soluta explicabo ut minima consequuntur deleniti. Dicta recusandae beatae modi.
-                    </p>
-                </div>
+            <div>
+                <label for="patronymic-input" placeholder="Отчество">Отчество</label>
+                <input id="patronymic-input" type="text" placeholder="Отчество">
             </div>
-
-        </div>
+            <div>
+                <label for="email-input" placeholder="Почта">Почта</label>
+                <input id="email-input" type="email" placeholder="example@mail.ru">
+            </div>
+            <div>
+                <label for="height-input" placeholder="Почта">Рост, см</label>
+                <input id="height-input" type="number" placeholder="Рост">
+            </div>
+            <div>
+                <label for="weight-input" placeholder="Почта">Вес, кг</label>
+                <input id="weight-input" type="number" placeholder="Вес">
+            </div>
+            <div>
+                <label for="clothes-size-select">Размер одежды</label>
+                <select name="clothes" id="clothes-size-select">
+                    <!-- <option value="">Выбрать</option> -->
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+            </div>
+            <div>
+                <input type="button" value="Отправить">
+            </div>
+            
+        </form>
     </div>
 
     <!-- Подвал -->
