@@ -5,4 +5,11 @@
     .form div {
         margin: 20px 20px;
     }
+    .send-message__title h4 {
+        font-size: 25px;
+        margin: 20px 0;
+    }
+    .send-message__text p {
+        font-size: 18px;
+    }
 }

@@ -181,7 +181,7 @@ form div:nth-child(7)::after {
 
 
 .eror-form {
-
+    display: none;
 }
 .form div:last-child {
     width: 80%;
@@ -213,3 +213,38 @@ form div:nth-child(7)::after {
     cursor: pointer;
 }
 
+
+
+.send-message-wrapper {
+    width: 100%;
+    max-width: 800px;
+    padding: 0 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    margin-top: 100px;
+}
+.send-message {
+    border: 2px solid rgba(63, 68, 74);
+    border-radius: 25px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(63, 68, 74);
+}
+.send-message__title {
+    width: 100%;
+    text-align: center;
+}
+.send-message__title h4{
+    font-weight: 600;
+    font-size: 30px;
+    margin: 25px 0;
+}
+.send-message__text {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+.send-message__text p {
+    margin: 20px;
+    font-weight: 400;
+    font-size: 20px;
+}
