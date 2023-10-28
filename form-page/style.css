@@ -199,7 +199,6 @@ form div:nth-child(7)::after {
     font-size: 18px;
     border-radius: 0;
     border: 0;
-    background-color: transparent;
     padding: 0;
     background-color: rgba(63, 68, 74, 1);
     color: rgb(237, 237, 237);
@@ -207,7 +206,7 @@ form div:nth-child(7)::after {
 .form div:last-child input:focus {
     outline-width: 0;
     box-shadow: rgba(63, 68, 74, 1) 0 0 0 0;
-    background-color: transparent;
+    background-color: rgba(63, 68, 74, 1);
 }
 .form div:last-child input:hover {
     background-color: rgba(63, 68, 74, 0.9);
