@@ -227,6 +227,10 @@ body{
     justify-content: center;
     box-sizing: border-box;
 }
+input {
+    color: inherit;
+    -webkit-appearance: none;
+}
 .form form {
     width: 100%;
     border: 2px solid rgba(63, 68, 74, 1);
