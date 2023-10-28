@@ -5,9 +5,6 @@
     .slider-sizee {
         height: 600px;
     }
-    .footer {
-        margin-top: 300px;
-    }
     .second-menu {
         margin: 200px auto;
     }
@@ -25,22 +22,6 @@
     }
     .slider-sizee {
         height: 400px;
-    }
-    .footer {
-        margin-top: 200px;
-    }
-    .footer__refs {
-        max-width: 650px;
-        margin-left: 100px;
-    }
-    .footer__refs a {
-        font-size: 16px;
-    }
-    .footer__ceo-name {
-        margin-top: 30px;
-    }
-    .footer__ceo-name h2 {
-        font-size: 18px;
     }
 }
 @media screen and (max-width: 786px) {
@@ -61,31 +42,8 @@
     .slick-dots li button:focus:before {
         opacity: .75;
     }
-    .nav__menu-button:hover div {
-        background-color: rgba(0, 0, 0, 0);
-    }
-    .footer__refs {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(8, 1fr);
-        margin-left: 0;
-    }
-    .footer__refs div {
-        text-align: center;
-        margin: 10px 0;
-    }
 }
 @media screen and (max-width: 425px) {
-    .nav {
-        margin:  0 10px;
-    }
-    .nav1__logo-ref {
-        width: 150px;
-        left: calc(50% - 75px);
-    }
-    .drop-menu__list {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(6, 1fr);
-    }
     .slider-sizee {
         height: 450px;
     }
@@ -124,19 +82,5 @@
         right: 10%;
         font-weight: 700;
         background: transparent;
-    }
-    .footer__logo {
-        width: 200px;
-        height: 70px;
-        margin-bottom: 10px;
-    }
-    .footer__refs a {
-        font-size: 14px;
-    }
-    .footer__ceo-name {
-        padding: 0 10px;
-    }
-    .footer__ceo-name h2 {
-        font-size: 15px;
     }
 }
