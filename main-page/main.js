@@ -55,8 +55,13 @@ $(document).ready( function(){
     }
 
     $('.marquee').marquee({
+        allowCss3Support: true,
+        css3easing: 'linear',
+        easing: 'linear',
+        delayBeforeStart: 0,
+        direction: 'left',
+        duplicated: false,
         duration: scroll_speed,
-        startVisible: true,
-        duplicated: false
+        startVisible: false
     });
 });
