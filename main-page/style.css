@@ -41,18 +41,20 @@
     text-decoration: none;
     position: absolute;
     border-radius: 30px;
+    border: 2px solid rgb(38, 52, 118);
     overflow: hidden;
     transition: 0.2s;
-    background-color: rgba(63, 68, 74, 0.623);
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 30px;
-    color: rgba(63, 68, 74, 1);
-    color: rgb(237, 237, 237);
+    color: rgb(38, 52, 118);
     padding: 15px;
+    box-sizing: border-box;
 }
 .second-menu a:hover{
     transform: scale(1.1);
+    background-color: rgb(38, 52, 118);
+    color: rgb(237, 237, 237);
 }
 
 .second-menu a:nth-child(1) {
@@ -84,14 +86,16 @@
     left: 5%;
     font-weight: 700;
     background: transparent;
-    color: rgba(63, 68, 74, 1);
+    color: rgb(38, 52, 118);
+    border: 0;
 }
 .second-menu a:nth-child(8) {
     bottom: 0;
     right: 10%;
     font-weight: 700;
     background: transparent;
-    color: rgba(63, 68, 74, 1);
+    color: rgb(38, 52, 118);
+    border: 0;
 }
 /* Анимация при скроле */
 .element-animation {
