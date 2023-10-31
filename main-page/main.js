@@ -54,7 +54,7 @@ $(document).ready( function(){
         scroll_speed=2000;
     }
 
-    $('.marquee').marquee({
+    $('.marquee-text').marquee({
         allowCss3Support: true,
         css3easing: 'linear',
         easing: 'linear',
