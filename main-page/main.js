@@ -35,6 +35,28 @@ $(document).ready( function(){
             }
         ]
     });
-   
 
+
+
+    let scroll_speed;
+    if ($(window).width()>1440) {
+        scroll_speed=6000;
+    }
+    else if ($(window).width()>1024) {
+        scroll_speed=5000;
+    }
+    else if ($(window).width()>768) {
+        scroll_speed=4000;
+    }
+    else if ($(window).width()>425) {
+        scroll_speed=3000;
+    } else {
+        scroll_speed=2000;
+    }
+
+    $('.marquee').marquee({
+        duration: scroll_speed,
+        startVisible: true,
+        duplicated: false
+    });
 });
