@@ -19,6 +19,9 @@
     .slick-dots li button:focus:before {
         opacity: .75;
     }
+    .space {
+        height: 150px;
+    }
 }
 @media screen and (max-width: 425px) {
     .slider-sizee {

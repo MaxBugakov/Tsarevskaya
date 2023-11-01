@@ -43,10 +43,7 @@
         opacity: .75;
     }
 }
-@media screen and (max-width: 425px) {
-    .slider-sizee {
-        height: 450px;
-    }
+@media screen and (max-width: 560px) {
     .second-menu {
         margin: 100px auto;
     }
@@ -86,4 +83,10 @@
         font-weight: 700;
         background: transparent;
     }
+}
+@media screen and (max-width: 425px) {
+    .slider-sizee {
+        height: 450px;
+    }
+    
 }

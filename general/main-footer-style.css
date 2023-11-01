@@ -126,7 +126,7 @@ body{
     align-items: center;
     justify-content: center;
 }
-.drop-menu__list {
+/* .drop-menu__list {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -171,7 +171,109 @@ body{
 .drop-menu__list > a:hover {
     transform: scale(1.03);
     background-color: rgba(0, 0, 0, 0.15);
+} */
+
+/* Новое меню */
+.drop-menu-wrapper {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    margin: 5px;
+    display: flex;
 }
+.drop-menu-first-wrapper {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.drop-menu-first{
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 14px;
+}
+.drop-menu-first__refs-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.drop-menu-first__refs{
+    /* width: calc(100% - 20px);
+    height: calc(100% - 20px); */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.drop-menu-first__refs a {
+    width: calc(100% - 20px);
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    color: rgb(237, 237, 237);
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 10px;
+    padding: 20px;
+    transition: 0.2s;
+}
+.drop-menu-first__refs a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.drop-menu-first__refs a:first-child {
+    padding: 10px;
+    margin-top: 0;
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+}
+.drop-menu-second-wrapper {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.drop-menu-second{
+    /* width: calc(100% - 20px);
+    height: calc(100% - 20px); */
+    width: 100%;
+    /* height: 100%; */
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.drop-menu-second a{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    color: rgb(237, 237, 237);
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 10px;
+    transition: 0.2s;
+}
+.drop-menu-second a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.drop-menu-second a:last-child {
+    margin-bottom: 0;
+}
+
+
+
 
 
 
