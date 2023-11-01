@@ -59,7 +59,7 @@
         width: 150px;
         left: calc(50% - 75px);
     }
-
+    /* Страя версия выпадающего меню. */
     /* .drop-menu__list {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(6, 1fr);
