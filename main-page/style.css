@@ -36,7 +36,7 @@
     margin-bottom: 300px;
     position: relative;
     box-sizing: border-box;
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 .second-menu a {
     width: 200px;
