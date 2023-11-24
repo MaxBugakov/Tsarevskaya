@@ -191,7 +191,7 @@ form div:nth-child(7)::after {
     border-radius: 20px;
     transition: 0.2s;
     box-sizing: border-box;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .form div:last-child input {
     font-family: 'Montserrat', sans-serif;
@@ -200,16 +200,18 @@ form div:nth-child(7)::after {
     border-radius: 0;
     border: 0;
     padding: 0;
-    background-color: rgba(63, 68, 74, 1);
-    color: rgb(237, 237, 237);
+    color: rgb(38, 52, 118);
+    border: 2px solid rgb(38, 52, 118);
+    border-radius: 20px;
 }
 .form div:last-child input:focus {
     outline-width: 0;
     box-shadow: rgba(63, 68, 74, 1) 0 0 0 0;
-    background-color: rgba(63, 68, 74, 1);
+    background-color: rgb(38, 52, 118);
 }
 .form div:last-child input:hover {
-    background-color: rgba(63, 68, 74, 0.9);
+    background-color: rgb(38, 52, 118);
+    color: rgb(237, 237, 237);
     cursor: pointer;
 }
 
@@ -248,6 +250,31 @@ form div:nth-child(7)::after {
     font-weight: 400;
     font-size: 20px;
 }
+
+/* Кнопка предзаказа */
+.pre-button-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.pre-button-wrapper a {
+    text-decoration: none;
+    color: rgb(38, 52, 118);
+    padding: 15px;
+    border: 2px solid rgb(38, 52, 118);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 23px;
+    transition: 0.2s;
+}
+.pre-button-wrapper a:hover {
+    background-color: rgb(38, 52, 118);
+    color: rgb(237, 237, 237);
+}
+
+
 
 .footer {
     margin-top: 250px;

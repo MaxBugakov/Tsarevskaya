@@ -1,11 +1,37 @@
-@media screen and (max-width: 425px) {
-    .info__mission__text>p {
-        font-size: 20px;
-    }
+@media screen and (max-width: 1440px) {
     .space {
         height: 150px;
     }
+    .info__mission {
+        margin-bottom: 150px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .info__mission__title>h2 {
+        font-size: 27px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 786px) {
+    .info__mission {
+        margin-bottom: 100px;
+    }
     .footer {
-        margin-top: 100px;
+        margin-top:  50px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .space {
+        height: 100px;
+    }
+    .info__mission__title>h2 {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+    .info__mission__text>p {
+        font-size: 19px;
     }
 }
