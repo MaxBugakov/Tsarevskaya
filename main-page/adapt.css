@@ -9,6 +9,14 @@
         margin: 200px auto;
     }
 }
+@media screen and (max-width: 1140px) {
+    .second-menu a:nth-child(2) {
+        right: 7%;
+    }
+    .second-menu a:nth-child(5) {
+        left: 48%;
+    }
+}
 @media screen and (max-width: 1024px) {
     .img1 {
         height: 600px;
@@ -23,6 +31,46 @@
     .slider-sizee {
         height: 400px;
     }
+
+    .second-menu a {
+        width: 150px;
+        height: 150px;
+    }
+    .second-menu a:nth-child(1) {
+        left: 23%;
+        width: 200px;
+        height: 200px;
+    }
+    .second-menu a:nth-child(2) {
+        right: 9%;
+    }
+    .second-menu a:nth-child(4) {
+        left: 20px;
+        top: 30%;
+        width: 200px;
+        height: 200px;
+    }
+    .second-menu a:nth-child(5) {
+        top: 20%;
+        left: 47%;
+        width: 220px;
+        height: 220px;
+    }
+    .second-menu a:nth-child(6) {
+        top: 45%;
+        right: 20px;
+        width: 170px;
+        height: 170px;
+    }
+    .second-menu a:nth-child(7) {
+        width: 150px;
+        height: 50px;
+    }
+    .second-menu a:nth-child(8) {
+        width: 150px;
+        height: 50px;
+    }
+
 }
 @media screen and (max-width: 786px) {
     .img1 {
@@ -42,8 +90,57 @@
     .slick-dots li button:focus:before {
         opacity: .75;
     }
+    .second-menu {
+        height: 550px;
+    }
+
+
+    .second-menu a {
+        width: 120px;
+        height: 120px;
+    }
+    .second-menu a:nth-child(1) {
+        top: 2%;
+        left: 5%;
+        width: 170px;
+        height: 170px;
+    }
+    .second-menu a:nth-child(2) {
+        top: -4%;
+        right: 7%;
+    }
+    .second-menu a:nth-child(3) {
+        top: 67%;
+        left: 30%;
+    }
+    .second-menu a:nth-child(4) {
+        left: 20px;
+        top: 38%;
+        width: 170px;
+        height: 170px;
+    }
+    .second-menu a:nth-child(5) {
+        top: 18%;
+        left: 43%;
+        width: 200px;
+        height: 200px;
+    }
+    .second-menu a:nth-child(6) {
+        top: 56%;
+        right: 20px;
+        width: 150px;
+        height: 150px;
+    }
+    .second-menu a:nth-child(7) {
+        width: 150px;
+        height: 50px;
+    }
+    .second-menu a:nth-child(8) {
+        width: 150px;
+        height: 50px;
+    }
 }
-@media screen and (max-width: 560px) {
+/* @media screen and (max-width: 560px) {
     .second-menu {
         margin: 100px auto;
     }
@@ -83,7 +180,7 @@
         font-weight: 700;
         background: transparent;
     }
-}
+} */
 @media screen and (max-width: 425px) {
     .slider-sizee {
         height: 450px;
