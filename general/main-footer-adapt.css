@@ -50,6 +50,12 @@
     .drop-menu-first__refs a:first-child {
         margin-top: 10px;
     }
+    .drop-menu-first {
+        height: fit-content;
+    }
+    .open-menu-animation {
+        height: 448px;
+    }
 }
 @media screen and (max-width: 425px) {
     .nav {

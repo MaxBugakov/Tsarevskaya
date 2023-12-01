@@ -181,7 +181,29 @@ body{
     border-radius: 15px;
     margin: 5px;
     display: flex;
+    height: fit-content;
+    height: 0;
+    overflow: hidden;
+    transition: 0.3s;
 }
+.open-menu-animation {
+    height: 229px;
+}
+
+
+.drop-menu-first-wrapper {
+    opacity: 0;
+    transition: 0.2s;
+} 
+.drop-menu-second-wrapper {
+    opacity: 0;
+    transition: 0.2s;
+}
+.open-menu-animation2 {
+    opacity: 1;
+} 
+
+
 .drop-menu-first-wrapper {
     width: 50%;
     display: flex;

@@ -1,30 +1,48 @@
 $(document).ready( function(){
     // Выпадающее меню.
     let click_menu_flag=false;
+    // Переменная для корректной анимации меню.
+    let continue_menu_animation=false;
     $(".nav__menu-button").on("click", function() {
-        if (click_menu_flag==false) {
-            $('#drop-menu').addClass('open-menu');
-            click_menu_flag=true;
-            $('.test-wrapper').css('z-index', '7');
-            var replaced = $("#menu").html().replace('Menu','Close');
-            $("#menu").html(replaced);
-        }
-        else {
-            $('#drop-menu').removeClass('open-menu');
-            click_menu_flag=false;
-            $('.test-wrapper').css('z-index', '-1');
-            var replaced = $("#menu").html().replace('Close','Menu');
-            $("#menu").html(replaced);
+        if (continue_menu_animation==false) {
+            if (click_menu_flag==false) {
+                continue_menu_animation=true;
+                $('#drop-menu').addClass('open-menu');
+                setTimeout(() => { $('.drop-menu-wrapper').addClass('open-menu-animation'); }, 1);
+                setTimeout(() => { $('.drop-menu-first-wrapper').addClass('open-menu-animation2'); }, 1);
+                setTimeout(() => { $('.drop-menu-second-wrapper').addClass('open-menu-animation2'); }, 1);
+                click_menu_flag=true;
+                $('.test-wrapper').css('z-index', '7');
+                var replaced = $("#menu").html().replace('Menu','Close');
+                $("#menu").html(replaced);
+                setTimeout(() => { continue_menu_animation=false; }, 300);
+            }
+            else {
+                continue_menu_animation=true;
+                $('.drop-menu-wrapper').removeClass('open-menu-animation');
+                $('.drop-menu-first-wrapper').removeClass('open-menu-animation2');
+                $('.drop-menu-second-wrapper').removeClass('open-menu-animation2');
+                setTimeout(() => { $('#drop-menu').removeClass('open-menu'); }, 300);
+                click_menu_flag=false;
+                $('.test-wrapper').css('z-index', '-1');
+                var replaced = $("#menu").html().replace('Close','Menu');
+                $("#menu").html(replaced);
+                setTimeout(() => { continue_menu_animation=false; }, 300);
+            }
         }
     });
     $(".test-wrapper").on("click", function() {
-        $('#drop-menu').removeClass('open-menu');
+        continue_menu_animation=true;
+        $('.drop-menu-wrapper').removeClass('open-menu-animation');
+        $('.drop-menu-first-wrapper').removeClass('open-menu-animation2');
+        $('.drop-menu-second-wrapper').removeClass('open-menu-animation2');
+        setTimeout(() => { $('#drop-menu').removeClass('open-menu'); }, 300);
         click_menu_flag=false;
         $('.test-wrapper').css('z-index', '-1');
         var replaced = $("#menu").html().replace('Close','Menu');
         $("#menu").html(replaced);
+        setTimeout(() => { continue_menu_animation=false; }, 300);
     });
-
     // Анимация логотипа при скроле.
     var logo = $('.nav1__logo');
     var dot = $('.nav1__dot');
