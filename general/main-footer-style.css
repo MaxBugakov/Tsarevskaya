@@ -61,7 +61,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    user-select: none; 
+    user-select: none;
 }
 
 .nav1__logo-ref {
