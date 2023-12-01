@@ -156,11 +156,15 @@
     .second-menu a:nth-child(1) {
         left: 10px;
     }
+    .second-menu a:nth-child(2) {
+        right: 19%;
+    }
     .second-menu a:nth-child(3) {
         left: 26%;
     }
     .second-menu a:nth-child(4) {
         left: 10px;
+        top: 36%;
     }
     .second-menu a:nth-child(5) {
         left: calc(100% - 200px - 10px);
