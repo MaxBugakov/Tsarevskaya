@@ -116,75 +116,27 @@ body{
     background-color: rgba(0, 0, 0, 0.2);
 }
 
+
 /* Выпадающее меню */
 .nav__drop-menu {
     width: 100%;
-    display: none;
-}
-.open-menu {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-/* Cтарая версия выпадающего меню. */
-/* .drop-menu__list {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-auto-flow: column;
-    background-color: rgba(0, 0, 0, 0.15);
-    margin: 5px;
-    border-radius: 15px;
-    padding: 5px;
-    max-height: calc(100vh - 100px);
-    overflow: scroll;
-}
-.drop-menu__list::-webkit-scrollbar {
-    display: none;
-}
-.drop-menu__list > a {
-    border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.1);
-    padding: 1em;
-    margin: 10px;
-    border-radius: 12px;
-    color: rgb(237, 237, 237); 
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    text-align: center;
-    transition: 0.2s;
-}
-.drop-menu__list > a span {
-    position: relative;
-}
-.drop-menu__list a:nth-child(3) span::before,
-.drop-menu__list a:nth-child(5) span::before {
-    content: ' ';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: rgb(38, 52, 118);
-    top: calc(50% + 1px);
-}
-.drop-menu__list > a:hover {
-    transform: scale(1.03);
-    background-color: rgba(0, 0, 0, 0.15);
-} */
-
 /* Новая версия выпадающего меню */
 .drop-menu-wrapper {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.15);
     border-radius: 15px;
-    margin: 5px;
     display: flex;
     height: fit-content;
     height: 0;
     overflow: hidden;
-    transition: 0.3s;
+    transition: 0.3s height 0s ease-in-out;
+}
+.open-menu {
+    margin: 5px;
 }
 .open-menu-animation {
     height: 229px;
